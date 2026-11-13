@@ -1,0 +1,14 @@
+name: Dashboard Refresh
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  refresh-requested:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log the refresh request
+        run: echo "Dashboard refresh requested"
